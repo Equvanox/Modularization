@@ -28,7 +28,8 @@ def convert_data_to_datasets(trainPath: str,
   """
 
   train_dataset = datasets.ImageFolder(root=trainPath,
-                                       transform=transform)
+                                       transform=transform,
+                                       target_transform=None)
   test_dataset = datasets.ImageFolder(root=testPath,
                                       transform=transform)
 
